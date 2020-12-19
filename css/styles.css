@@ -34,7 +34,7 @@ ul {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 2px solid tomato;
+  outline: 1px solid tomato;
 }
 
 /* Logo */
@@ -167,9 +167,10 @@ ul {
   border-radius: 4px;
 }
 
-/* Sections */
+/* Main */
 
 .section-title {
+  margin: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -178,33 +179,89 @@ ul {
   color: var(--main-dark-color);
 }
 
-.team {
-  background: #f5f4fa;
+.advantages {
+  display: flex;
+  outline: 1px solid teal;
+}
+
+.advantages-item {
+  width: 270px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  outline: 1px solid teal;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-dark-color);
+  outline: 1px solid teal;
 }
 
 .advantages-description {
-  line-height: 1.14;
+  margin: 0;
+  line-height: 1.71;
 }
 
+.business {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+
+.business-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
+  outline: 1px solid tomato;
+}
+
+.team-list {
+  display: flex;
+  margin-top: 50px;
+  outline: 1px solid tomato;
+}
+
+.team-name {
+  width: 270px;
+  background: var(--main-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  outline: 1px solid tomato;
+}
+
+.team-name:not(:last-child) {
+  margin-right: 30px;
+}
 .team-list .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--main-dark-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  outline: 1px solid tomato;
 }
 
 .team-list .profession {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -213,19 +270,31 @@ ul {
 
 /* Footer */
 
-footer {
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--dark-background);
 }
 
-.address-street {
+.footer .logo-web {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+address {
+  margin-bottom: 9px;
   font-style: normal;
   line-height: 1.71;
   color: var(--main-white-color);
 }
 
-.address-contact {
+.address-contact .item {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address-contact:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Button */
@@ -239,6 +308,14 @@ button {
   top: 174px;
 }
 /* Portfolio */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 .btn-portfolio {
   font-weight: 500;
