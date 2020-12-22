@@ -132,14 +132,14 @@ header {
 
 .hero {
   background: var(--dark-background);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-container {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -173,6 +173,11 @@ header {
 
 /* Main */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   margin: 0;
   font-weight: 700;
@@ -189,8 +194,6 @@ header {
 
 .advantages-item {
   width: 270px;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .advantages-item:not(:last-child) {
@@ -213,10 +216,14 @@ header {
   line-height: 1.71;
 }
 
+.section-business {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
 .business {
   display: flex;
   margin-top: 50px;
-  margin-bottom: 94px;
 }
 
 .business-item:not(:last-child) {
@@ -224,8 +231,6 @@ header {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: #f5f4fa;
 }
 
@@ -245,6 +250,11 @@ header {
 .team-name:not(:last-child) {
   margin-right: 30px;
 }
+
+.image {
+  display: block;
+}
+
 .team-list .name {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -333,7 +343,6 @@ button {
   line-height: 1.63;
   border-style: none;
   border-radius: 4px;
-  box-shadow: var(--btn-shadow);
   outline: transparent;
   cursor: pointer;
 }
@@ -342,6 +351,7 @@ button {
 .btn-portfolio:focus {
   color: var(--main-white-color);
   background: var(--accent);
+  box-shadow: var(--btn-shadow);
 }
 
 .examples {
@@ -354,11 +364,11 @@ button {
   width: 370px;
   margin: 15px;
   background: #ffffff;
-  box-shadow: var(--btn-shadow);
 }
 
-.image-portfolio {
-  display: block;
+.examples-item:hover,
+.examples-item:focus {
+  box-shadow: var(--btn-shadow);
 }
 
 .examples-box {
